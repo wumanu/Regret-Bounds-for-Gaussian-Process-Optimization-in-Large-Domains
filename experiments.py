@@ -603,7 +603,7 @@ def evaluate_continuous_experiment():
         f.write(ei_vs_ei2.to_latex(label='fig:' + name,
                                    caption=caption))
 
-    caption = """Fraction $\\frac{t_{ucb}(R,l,D)}{t_{ucb}(R,l,D)}$ for 
+    caption = """Fraction $\\frac{t_{ucb}(R,l,D)}{t_{ucb2}(R,l,D)}$ for 
     continuous domains. NaN entries correspond to the case where the 
     given regret was not attained after $T=50$ evaluations."""
     name = filename + '_ucb_vs_ucb2'
