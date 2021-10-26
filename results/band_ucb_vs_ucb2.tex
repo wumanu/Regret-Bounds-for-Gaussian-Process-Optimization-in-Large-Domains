@@ -1,0 +1,24 @@
+\begin{table}
+\centering
+\caption{Fraction $\frac{t_{ucb}(\text{band\_size, band\_corr})}
+    {t_{ucb2}(\text{band\_size, band\_corr})}$ for finite band covariance 
+    matrices. The covariance matries are identity matrices with 
+    $\text{band\_size}$ many elements with value $\text{band\_corr}$ added 
+    to each side of the diagonal. NaN entries correspond to the 
+    case where the given regret was not attained after $T=20$ evaluations.}
+\label{fig:band_ucb_vs_ucb2}
+\begin{tabular}{llrrrrr}
+\toprule
+   &       &  2.00 &  1.55 &  1.10 &  0.65 &  0.20 \\
+band\_size & band\_corr &       &       &       &       &       \\
+\midrule
+0  &  0.00 &   1.0 &   1.0 &  1.00 &   NaN &   NaN \\
+2  & -0.20 &   1.0 &   1.0 &  0.86 &  0.87 &   NaN \\
+3  &  0.20 &   1.0 &   1.0 &  0.87 &  0.89 &   NaN \\
+5  & -0.10 &   1.0 &   1.0 &  1.00 &  0.88 &   NaN \\
+   &  0.20 &   1.0 &   1.0 &  1.00 &  0.88 &   NaN \\
+10 &  0.10 &   1.0 &   1.0 &  1.00 &  0.83 &   NaN \\
+40 &  0.05 &   1.0 &   1.0 &  1.00 &  1.00 &   NaN \\
+\bottomrule
+\end{tabular}
+\end{table}
